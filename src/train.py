@@ -27,7 +27,7 @@ mlflow.set_experiment("wine-quality-experiment")
 with mlflow.start_run():
 
     # Train a model
-    random_state = 2
+    random_state = 42
 
     model = RandomForestClassifier(
         n_estimators=50,
